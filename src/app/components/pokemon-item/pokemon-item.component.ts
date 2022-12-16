@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class PokemonItemComponent {
   @Input() name = 'Bulbizarre';
   @Input() level = 10;
+  @Input () picture = "";
   @Output() onDelete = new EventEmitter<string>();
   sex: 'male' | 'female' = Math.random() < 0.5 ? 'male' : 'female';
 

@@ -15,10 +15,12 @@ export class PokemonsListComponent {
     {
       name: 'bulbizarre',
       level: 3,
+      picture: "https://www.waouo.com/wp-content/uploads/2015/10/bulbizarre.png"
     },
     {
       name: 'carapuce',
       level: 2,
+      picture: "https://www.pngplay.com/wp-content/uploads/12/Squirtle-Pokemon-Clip-Art-Transparent-File.png"
     },
   ];
 
@@ -32,7 +34,8 @@ export class PokemonsListComponent {
     this.hasAddedAPokemon = true;
     this.pokemons.push({
       name: this.currentPokemonName,
-      level: 1
+      level: 1,
+      picture: "",
     });
   }
 
@@ -41,3 +44,4 @@ export class PokemonsListComponent {
     this.pokemons.splice(index, 1);
   }
 }
+
